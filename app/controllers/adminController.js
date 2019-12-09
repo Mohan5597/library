@@ -6,7 +6,7 @@ module.exports.register=(req,res) =>{
     const admin=new Admin(body)
     admin.save()
         .then((admin) =>{
-            res.send({         //we can specify what we can send back  like user name,id email rather than sending whole user
+            res.send({         
                 _id:admin._id,
                 username:admin.username,
                 name:admin.name,

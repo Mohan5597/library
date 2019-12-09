@@ -55,9 +55,10 @@ class AdminLogin extends React.Component {
         return (
             
             <div className="container col-md-4">
-                <p>admin login details</p><br/>
-                <p>Email-</p><br/>
-                <p>Password-</p>
+               <b>-login with the below admin details to view and control-</b>
+               
+                <p><b>Email-</b>admin1@gmail.com</p>
+                <p><b>Password-</b>secret123</p>
 
                 <h2  color="primary">Login</h2>
                 {this.state.errMsg && <p>{this.state.errMsg}</p>}
