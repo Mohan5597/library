@@ -38,6 +38,8 @@ class Books extends React.Component{
                     </tbody>
                    
                 </table>
+               
+               
 
             </div>
         )
@@ -45,7 +47,7 @@ class Books extends React.Component{
 }
 const mapStateToProps=(state)=>{
     return{
-        books:state.books
+        books:state.books.filter(book => book.currentAvailabilityStatus=="Available")
     }
 }
 export default connect(mapStateToProps)(Books)
